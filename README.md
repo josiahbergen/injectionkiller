@@ -6,7 +6,7 @@ profs will often put hidden text in assignment descriptions that are invisible t
 
 this extension detects and removes them.
 
-### Installation
+### installation
 
 - download the extension here: https://download.jojobinx.com/?f=injectionkiller
 - unzip the file
@@ -14,6 +14,10 @@ this extension detects and removes them.
 - in the top right, turn on 'developer mode'. you can turn this off once you load the extension.
 - on the top left, select 'load unpacked'. select the folder that you just unzipped.
 - enjoy!
+
+### configuration
+
+to change the behaviour of the extension, you can access the settings by clicking on the extension's icon in the extensions menu.
 
 ### privacy
 
