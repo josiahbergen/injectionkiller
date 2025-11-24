@@ -1,0 +1,53 @@
+/* Notification Banner */
+#injection-finder-notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d32f2f;
+  color: white;
+  padding: 10px 20px;
+  z-index: 999999;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  transition: opacity 0.5s ease-out; /* Default transition for manual remove */
+  opacity: 1;
+}
+
+#injection-finder-notification.fade-out {
+  opacity: 0;
+  pointer-events: none; /* Prevent clicks while fading */
+}
+
+#injection-finder-notification button {
+  background-color: white;
+  color: #d32f2f;
+  border: none;
+  padding: 3px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+/* Highlight class for found elements */
+.injection-finder-highlight {
+  outline: 2px solid red !important;
+  background-color: rgba(255, 255, 0, 0.3) !important;
+  opacity: 1 !important; /* Force visibility */
+  visibility: visible !important;
+  display: inline-block !important; /* Try to show it */
+  
+  /* Override size and color to make it readable */
+  font-size: 20px !important;
+  color: red !important;
+  border: 2px solid red !important;
+  text-decoration: none !important;
+  line-height: normal !important;
+}

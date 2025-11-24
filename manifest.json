@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "injectionkiller",
+  "version": "1.0.0",
+  "description": "scans twu.ca moodle pages for prompt injection attacks.",
+  "icons": {
+    "48": "icons/icon-48.svg",
+    "96": "icons/icon-96.svg"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon-48.svg",
+      "96": "icons/icon-96.svg"
+    }
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://learn.twu.ca/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "host_permissions": [
+    "https://learn.twu.ca/*"
+  ]
+}

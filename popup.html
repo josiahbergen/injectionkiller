@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 250px;
+      padding: 15px;
+      font-family: sans-serif;
+      color: #333;
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 16px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 8px;
+    }
+    .option {
+      margin: 15px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    input[type="radio"] {
+      margin-right: 8px;
+    }
+    .desc {
+      margin-left: 24px;
+      font-size: 12px;
+      color: #666;
+      line-height: 1.4;
+    }
+    .about {
+      font-size: 12px;
+      color: #666;
+      line-height: 1.4;
+    }
+    #status {
+      margin-top: 10px;
+      font-size: 12px;
+      color: green;
+      height: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h2>injectionkiller by josiah bergen</h2>
+
+  <p class="about">
+    scans twu.ca moodle pages for prompt injection attacks.
+    <br><br>
+    profs will put hidden text in assignment descriptions that are 
+    invisible to you, but will appear when copy/pasted into chatgpt or google.<br><br>
+    source code is open source and available on <a href="https://github.com/josiahbergen/injectionkiller" target="_blank">github</a>.
+  </p>
+  <br>
+
+  <h2>settings</h2>
+  
+  <div class="option">
+    <label>
+      <input type="radio" name="mode" value="manual" checked>
+      Manual
+    </label>
+    <div class="desc">
+      Notifies you of hidden text elements.
+    </div>
+  </div>
+
+  <div class="option">
+    <label>
+      <input type="radio" name="mode" value="peaceOfMind">
+      Peace of Mind
+    </label>
+    <div class="desc">
+      Automatically remove all hidden text. Never worry about prompt injection again.
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
