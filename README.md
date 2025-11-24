@@ -2,11 +2,13 @@
 
 ### disclaimer
 
-this tool does NOT encourage academic dishonesty in any way. this tool is made for informational purposes only. ALWAYS use generative AI tools responsively and in accordance with your syllabus' generative ai policy.
+this tool does NOT encourage academic dishonesty in any way. ALWAYS use generative AI tools responsively and in accordance with your syllabus' generative ai policy. <br>
+
+the intended use for this tool is to protect yourself from accidentally following these injected instructions when copy/pasting assingnment instructions into google or a personal word document.
 
 ### about
 
-hidden text can often be hidden in assignment descriptions. these are invisible to you, but will appear when copy/pasted into chatgpt or google.<br>
+hidden text can often be hidden in assignment descriptions. these are invisible to you, but will appear when copy/pasted into google or another document.<br>
 
 this extension detects and removes them.
 
