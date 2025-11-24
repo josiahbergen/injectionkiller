@@ -8,5 +8,13 @@ this extension detects and removes them.
 
 ### Installation
 
-download from the chrome web store: 
+- download the extension here: https://download.jojobinx.com/?f=injectionkiller
+- unzip the file
+- in google chrome, navigate to chrome://extensions/
+- in the top right, turn on 'developer mode'. you can turn this off once you load the extension.
+- on the top left, select 'load unpacked'. select the folder that you just unzipped.
+- enjoy!
 
+### privacy
+
+nothing is collected, stored, or saved anywhere. I can't see anything. don't believe me? you can read the injected code yourself, it's only 200 lines.
