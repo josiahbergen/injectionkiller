@@ -62,7 +62,7 @@
     
     // Use local storage to check for 'peaceOfMind' setting
     storage.local.get(['mode'], (result) => {
-      const mode = result.mode || 'manual'; // Default to manual
+      const mode = result.mode || 'peaceOfMind'; // Default to peaceOfMind
       
       if (mode === 'peaceOfMind') {
         // Automatically remove elements

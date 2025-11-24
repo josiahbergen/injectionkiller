@@ -53,7 +53,7 @@
   <h2>injectionkiller by josiah bergen</h2>
 
   <p class="about">
-    scans twu.ca moodle pages for prompt injection attacks.
+    protect yourself from your sneaky profs.
     <br><br>
     profs will put hidden text in assignment descriptions that are 
     invisible to you, but will appear when copy/pasted into chatgpt or google.<br><br>
@@ -65,7 +65,17 @@
   
   <div class="option">
     <label>
-      <input type="radio" name="mode" value="manual" checked>
+      <input type="radio" name="mode" value="peaceOfMind" checked>
+      Peace of Mind
+    </label>
+    <div class="desc">
+      Automatically remove all hidden text. Never worry about prompt injection again.
+    </div>
+  </div>
+  
+  <div class="option">
+    <label>
+      <input type="radio" name="mode" value="manual">
       Manual
     </label>
     <div class="desc">
@@ -73,15 +83,6 @@
     </div>
   </div>
 
-  <div class="option">
-    <label>
-      <input type="radio" name="mode" value="peaceOfMind">
-      Peace of Mind
-    </label>
-    <div class="desc">
-      Automatically remove all hidden text. Never worry about prompt injection again.
-    </div>
-  </div>
 
   <script src="popup.js"></script>
 </body>

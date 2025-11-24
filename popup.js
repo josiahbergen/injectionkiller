@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // Load saved setting
   // Note: Firefox supports 'browser' namespace, Chrome uses 'chrome'. 
   // WebExtension polyfills or checking existence is common, but 'browser' works in Firefox natively.
-  // For broader compatibility (if moved to Chrome later), we often use chrome.storage.
+  // For broader compatibility we use chrome.storage.
   const storage = (typeof browser !== 'undefined' ? browser : chrome).storage;
 
   storage.local.get(['mode'], (result) => {
-    if (result.mode === 'peaceOfMind') {
-      pomRadio.checked = true;
-    } else {
+    if (result.mode === 'manual') {
       manualRadio.checked = true;
+    } else {
+      pomRadio.checked = true;
     }
   });
 
